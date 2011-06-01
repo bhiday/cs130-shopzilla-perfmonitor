@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_shopzilla_perfmonitor_data_CompositePerfData" object="${compositeperfdata}" path="/compositeperfdatas" z="KN7HxWddVQWxw85BdpG5XZXiYYg=">
+        <field:display field="webappName" id="s_com_shopzilla_perfmonitor_data_CompositePerfData_webappName" object="${compositeperfdata}" z="gPHEzejPDOA1SPaCezrF5UO5wRc="/>
+        <field:display field="methodName" id="s_com_shopzilla_perfmonitor_data_CompositePerfData_methodName" object="${compositeperfdata}" z="YXH0S0abKpOT1MtaeAbjadHT28A="/>
+        <field:display date="true" dateTimePattern="${compositePerfData_invoketime_date_format}" field="invokeTime" id="s_com_shopzilla_perfmonitor_data_CompositePerfData_invokeTime" object="${compositeperfdata}" z="WUtc3VGD5WXuB3UAf+cereqrlFI="/>
+        <field:display field="execTime" id="s_com_shopzilla_perfmonitor_data_CompositePerfData_execTime" object="${compositeperfdata}" z="z93gXKI5Zi7Sy5wHCn9cLIZZPYM="/>
+    </page:show>
+</div>

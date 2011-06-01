@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_shopzilla_perfmonitor_data_CompositePerfData" items="${compositeperfdatas}" z="n7IkjUSXzxdD/RNco3ilViDhYfY=">
+        <table:table data="${compositeperfdatas}" id="l_com_shopzilla_perfmonitor_data_CompositePerfData" path="/compositeperfdatas" z="ch7qC8MY0+2OdgEtMaPKMQLdv1Q=">
+            <table:column id="c_com_shopzilla_perfmonitor_data_CompositePerfData_webappName" property="webappName" z="C8pBfuIXCfhZCOwpVLIRBSqNEcA="/>
+            <table:column id="c_com_shopzilla_perfmonitor_data_CompositePerfData_methodName" property="methodName" z="og//wiuVKV0dl2h8IBmvL2mNJXo="/>
+            <table:column date="true" dateTimePattern="${compositePerfData_invoketime_date_format}" id="c_com_shopzilla_perfmonitor_data_CompositePerfData_invokeTime" property="invokeTime" z="Sve3bopG6njZD1OQqRzRgtsAYlw="/>
+            <table:column id="c_com_shopzilla_perfmonitor_data_CompositePerfData_execTime" property="execTime" z="PtkqU7Zo0cejsbCcR2fCra46oSI="/>
+        </table:table>
+    </page:list>
+</div>

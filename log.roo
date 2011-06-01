@@ -1,0 +1,80 @@
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2011-05-31 17:25:13
+download status
+download accept terms of use
+project --topLevelPackage com.shopzilla.perfmonitor
+hint
+persistence setup --provider HIBERNATE --database MYSQL 
+hint
+entity --class ~.data.CompositePerfData
+hint
+help fiel
+hint
+field string --fieldName webappName --column webapp_name
+field string --fieldName methodName --column method_name
+field date --fieldName invokeTime --type java.util.Date --column invoke_time
+field number --fieldName execTime --type java.lang.Long --column exec_time
+hint
+hint topics
+database properties list
+database properties set --key database.password --value asdfg
+database properties set --key database.url --value mysql://localhost:3306/shopzilla-mon
+database properties set --key database.username --value shopzilla-mon
+database properties list
+hint
+hint controllers
+controller all --package com.shopzilla.perfmonitor.web
+hint
+// [failed] controller class --class com.shopzilla.perfmonitor.web.CompositePerfDataController
+hint
+hint controllers
+hint
+perform tests
+hint
+exit
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2011-05-31 17:48:29
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2011-05-31 17:52:07
+database properties list
+// [failed] database introspect --schema shopzilla-mon
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml
+addon install id --searchResultId 01
+// [failed] database introspect --schema shopzilla-mon
+// [failed] database introspect --schema shopzilla-mon
+// [failed] database introspect --schema shopzilla-mon 
+exit
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2011-05-31 17:54:12
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2011-05-31 17:59:17
+exit
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2011-05-31 17:59:34
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2011-05-31 17:59:38
+addon search --requiresCommand "database"
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2011-05-31 18:00:23
+// [failed] database introspect --schema unable-to-obtain-connection
+hint database
+hint 
+help
+perform test
+perform tests
+hint
+hint topics
+hint jpa
+hint general
+exit
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2011-05-31 18:04:30
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2011-05-31 18:05:35
+test integration --entity com.shopzilla.perfmonitor.data.CompositePerfData
+perform tests
+exit
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2011-05-31 18:06:39
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log opened at 2011-05-31 18:08:00
+hint
+perform tests
+test integration --entity com.shopzilla.perfmonitor.data.CompositePerfData
+perform tests
+hint
+hint logging
+logging setup --level WARN 
+logging setup --level DEBUG
+exit
+// Spring Roo 1.1.4.RELEASE [rev f787ce7] log closed at 2011-05-31 18:12:47
